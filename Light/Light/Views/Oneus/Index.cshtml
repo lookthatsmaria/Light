@@ -1,0 +1,198 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ ViewData["Title"] = "Oneus";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        a{
+            color: indianred;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        div.d {
+            text-align: justify;
+        }
+       img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        iframe{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+
+            .videoWrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a asp-controller="Oneus" asp-action="Beginner">Starter Pack</a>
+        <a asp-controller="Oneus" asp-action="Fancafe">Fancafé</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <div class="d">
+            <img src="https://0.soompi.io/wp-content/uploads/2020/12/03071624/ONEUS-2.jpg" alt="ONEUS" style="width:100%">
+            <p>[ONEUS] Concept Photo From DEVIL Era</p>
+            <h1>ONEUS</h1>
+            <p>"ONEUS" (Hangul: 원어스) is a South Korean boy group under RBW Entertainment. The group consists of six members: <a asp-controller="Oneus" asp-action="Ravn" color="indianred">Ravn</a>, Seoho, Leedo, Keonhee, Hwanwoong and Xion. They debuted with their 1st mini album "Light Us" on January 9, 2019, with "Valkyrie" serving as its lead single.</p>
+            <div class="videoWrapper">
+                <iframe width="966" height="543" src="https://www.youtube.com/embed/k6msd9uh8nA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="center">[ONEUS] Debut Song "Valkyrie"</p>
+
+            <h2> Group’s Name Meaning 🌙</h2>
+            <p>  ONEUS has two meanings. One is that the members came together by gathering strength from every one of their fans. The other meaning symbolizes ONEUS’s mission to bring together regular people who will work side-by-side to create a united world. Oneus in korean language can also be spelled as One Earth.</p>
+
+            <h2>
+                Greeting 🌙
+            </h2>
+            <p>
+                "ONE US! Hello, We're ONEUS"
+                (while making a hand sign of 'one' and circle for 'earth')
+            </p>
+            <h2>Members 🌙</h2>
+            <table>
+                <tr>
+                    <th>Birth Name</th>
+                    <th>Stage Name</th>
+                    <th>Birth Date</th>
+                    <th>Position</th>
+                </tr>
+                <tr>
+                    <td><a asp-controller="Oneus" asp-action="Ravn" color="indianred">Kim Young-Jo</a></td>
+                    <td><a asp-controller="Oneus" asp-action="Ravn" color="indianred">Ravn</a></td>
+                    <td>September 2, 1995</td>
+                    <td>Lead Rapper</td>
+                </tr>
+                <tr>
+                    <td>Lee Seoho</td>
+                    <td>Seoho</td>
+                    <td>June 7, 1996</td>
+                    <td>Main Vocalist</td>
+                </tr>
+                <tr>
+                    <td>Kim Gunhak</td>
+                    <td>Leedo</td>
+                    <td>July 26, 1997</td>
+                    <td>Main Rapper, Lead Dancer</td>
+                </tr>
+                <tr>
+                    <td>Lee Keonhee</td>
+                    <td>Keonhee</td>
+                    <td>June 27, 1998</td>
+                    <td>Main Vocalist</td>
+                </tr>
+                <tr>
+                    <td>Yu Hwanwoong</td>
+                    <td>Hwanwoong</td>
+                    <td>August 26, 1998</td>
+                    <td>Main Dancer</td>
+                </tr>
+                <tr>
+                    <td>Son Dongju</td>
+                    <td>Xion</td>
+                    <td>January 10, 2000</td>
+                    <td>Maknae, Vocalist</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <h2>Fandom's Name 🌙</h2>
+            <p>
+                TO MOON is ONEUS's official fandom name. It was officially established on March 21, 2019, after they announced it via social media and a V Live broadcast.
+            </p>
+            <h3>Meaning of the Fandom's Name 🌙</h3>
+            <p>
+                On the track ZigZag (2nd track of their debut album “Light us”), the lyrics goes “just like the earth and the moon, I revolve around you” meaning that the moon (fans) will always revolve around Earth (ONEUS).
+            </p>
+            <p class="center">[ONEUS] Official Colors</p>
+            <img src="https://0.soompi.io/wp-content/uploads/2019/12/28201212/oneus2.jpg" alt="ONEUS' OFFICIAL COLORS" style="width:50%">
+
+        </div>
+    </div>
+
+    <script>function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }</script>
+
+</body>
+</html>

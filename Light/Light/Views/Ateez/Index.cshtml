@@ -1,0 +1,200 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{ ViewData["Title"] = "Ateez";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        div.d {
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a asp-controller="Ateez" asp-action="Beginner">Beginner's guide</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="d">
+            <img src="https://www.tmrwmagazine.com/wp-content/uploads/2019/08/IMG_0031.jpg" alt="ATEEZ" style="width:100%">
+            <p>[ATEEZ] Concept Photo from Illusion Era</p>
+            <h1>ATEEZ</h1>
+            ATEEZ (Hangul: 에이티즈) is a South Korean boy band under KQ Entertainment. The group consisting of members <a asp-controller="Ateez" asp-action="Hongjoong">Hongjoong</a>, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung, and Jongho.
+            They debuted on October 24th, 2018 with Treasure Ep.1: All to Zero. "Pirate King" was the title track of their debut album.
+
+            <iframe width="966" height="543" src="https://www.youtube.com/embed/RqJ1rH9M5G0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <p>&nbsp;</p>
+            <h2> Group’s Name Meaning </h2>
+            <p>
+                Why "ATEEZ" ?: Diminutive of A Teenagers Z, it means teenagers that encompass everything from A to Z.
+            </p>
+            <p>
+                Curiosity: before they were called KQ-FELLAZ.
+            </p>
+
+            <h2>
+                Greeting
+            </h2>
+            <p>
+                "8 Makes 1 Team! Hello, we are ATEEZ!"
+            </p>
+            <p>&nbsp;</p>
+            <h2>Members</h2>
+            <table>
+                <tr>
+                    <th>Stage Name</th>
+                    <th>Birth Name</th>
+                    <th>Birth Date</th>
+                    <th>Position</th>
+                </tr>
+                <tr>
+                    <td><a asp-controller="Ateez" asp-action="Hongjoong">Hongjoong</a></td>
+                    <td> <a asp-controller="Ateez" asp-action="Hongjoong">Kim Hong-Joong(김홍중)</a></td>
+                    <td>November 7, 1998 </td>
+                    <td>
+                        Leader, Lead Rapper, Vocalist.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Seonghwa</td>
+                    <td>Park Seong-Hwa (박성화)</td>
+                    <td>April 3, 1998</td>
+                    <td>Vocalist</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Yunho</td>
+                    <td>Jeong Yun-Ho (정윤호)</td>
+                    <td>March 23, 1999</td>
+                    <td>Main Dancer, Vocalist </td>
+                </tr>
+                <tr>
+                    <td>Yeosang</td>
+                    <td>Kang Yeo-Sang (강여상)</td>
+                    <td>June 15, 1999</td>
+                    <td>Lead Dancer, Vocalist</td>
+                </tr>
+                <tr>
+                    <td>San</td>
+                    <td>Choi San (최산)</td>
+                    <td>July 10, 1999</td>
+                    <td>Main Performer, Lead Vocalist</td>
+                </tr>
+                <tr>
+                    <td>Mingi</td>
+                    <td>Song Min-Gi (송민기) </td>
+                    <td>August 9, 1999</td>
+                    <td>Main Rapper, Main Dancer</td>
+                </tr>
+                <tr>
+                    <td>Wooyoung</td>
+                    <td>Jung Woo-Young (정우영)</td>
+                    <td>November 26, 1999 </td>
+                    <td>Main Dancer, Vocalist</td>
+                </tr>
+                <tr>
+                    <td>Jongho</td>
+                    <td>Choi Jong-Ho (최종호)</td>
+                    <td>October 12, 2000 </td>
+                    <td>Main Vocalist, Maknae</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <h2>Fandom's Name</h2>
+            <p>
+                ATINY is ATEEZ`s official fandom name. The name was announced by ATEEZ on V Live on November 17, 2018, beating other possible names, AZEET, TREASURE, ZEETA, and ZTEEZ. It was officially established on November 22, 2019, after the first recruitment closed.
+            </p>
+            <h3>Meaning of the Fandom's Name</h3>
+            <p>
+                Why? "ATINY" is a mix between ateez and destiny (destiny) and therefore "ATINY" is ATEEZ's destiny.
+            </p>
+           <h3>Curiosity</h3>
+            <p>Atiny are the most spoiled fandom because the agency actually subtitles most of their contents and they even let the fans choose the title track of some the albums by votation!</p>
+        </div>
+    </div>
+
+    <script>function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }</script>
+
+</body>
+</html>

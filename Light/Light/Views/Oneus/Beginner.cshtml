@@ -1,0 +1,118 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ ViewData["Title"] = "To Moon-Starter Pack";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img {
+            padding: 10px;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: indianred;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a asp-controller="Oneus" asp-action="Beginner">Starter Pack</a>
+        <a asp-controller="Oneus" asp-action="Fancafe">Fancafé</a>
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <div class="text-center">
+
+            <h1> Guides To Stan Oneus</h1>
+            <p>[DISCLAIMER] None of this videos are mine. Credits to the owner! I just chose the most helpful guides from my point of view.</p>
+            <iframe width="966" height="543" src="https://www.youtube.com/embed/Vu4uOODH_gg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>[Suki Kirai] A Detailed Introduction to ONEUS 2021</p>
+            <iframe width="966" height="543" src="https://www.youtube.com/embed/O2frrKm5x_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>[dazzlitez] a (most likely) helpful guide to oneus</p>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYM3zFXMwSx0L09q2Q1WCY-os2G1BNxKfaMTt_2rQYGMDokA/viewform?embedded=true" embedded=true"
+                width="100%"
+                height="3000px"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0">
+            Loading…
+        </iframe>
+
+        <h2>Links to Oneus' Official Social Media Accounts</h2>
+        <a href="https://www.youtube.com/channel/UCWTYf4xModfNsyq2NUYjF5g">
+            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png" alt="Link to Oneus' Official Youtube Channel" style="width:10%">
+        </a>
+        <a href="https://twitter.com/official_ONEUS">
+            <img src="https://cdn4.iconfinder.com/data/icons/various-icons-2/476/Twitter.png" alt="Link to Oneus Official Twitter" style="width:8%">
+        </a>
+        <a href="https://www.instagram.com/official_oneus/">
+            <img src="https://shangay.com/wp-content/uploads/2018/06/instagram-lgtb.jpg" alt="Link to Oneus Official Instagram" style="width:20%">
+        </a>
+        <a href="https://cafe.daum.net/RBWBOYZ">
+            <img src="data:image/png;base64,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"
+                 alt="Link to Oneus Official Daum Cafe" style="width:20%">
+        </a>
+        <a href="https://www.vlive.tv/channel/C2D78B">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/VLive_LOGO.png" alt="Link to Oneus Official Vlive account" style="width:15%">
+        </a>
+        <a href="https://www.facebook.com/officialONEUS">
+            <img src="https://st4.depositphotos.com/5225467/23021/v/600/depositphotos_230217770-stock-illustration-facebook-logo-vector-editorial.jpg"
+                 alt="Link to Oneus' Official Facebook account" style="width:13%">
+        </a>
+    </div>
+    <script>function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }</script>
+</body>
+</html>
+

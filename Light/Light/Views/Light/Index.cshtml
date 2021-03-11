@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ ViewData["Title"] = "Idols Groups";
+}
+<h1>Idols Groups</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a{
+            color: black;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Clearfix (clear floats) */
+        .txtimg {
+            display: inline-block;
+            text-align: center;
+        }
+
+            .txtimg > img {
+                display: block;
+            }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <div class="txtimg">
+            <img src="https://pm1.narvii.com/7740/a0c7dd6e69c8f83f86bb7a952ed19ca8d8a6a172r1-2048-1152v2_uhq.jpg" alt="ATEEZ" style="width:82%">
+            <a asp-controller="Ateez" asp-action="Index" style="color:indianred">[ATEEZ]</a>
+            <a>ATEEZ X Now me (NYLON JAPAN, clothing collaboration)</a>
+        </div>
+        <div class="txtimg">
+            <img src="https://6.viki.io/image/fa9ba321600549fd8058546b7efb837f.jpeg?s=900x600&e=t" alt="ONEUS" style="width:100%">
+            <a asp-controller="Oneus" asp-action="Index" style="color:indianred">[ONEUS]</a>
+            <a>Photo Concept from Twilight</a>
+        </div>
+        <div class="txtimg">
+            <img src="https://pbs.twimg.com/media/EdazdZfU8AAdwXi.jpg" alt="CIX" style="width:81%">
+            <a asp-controller="Cix" asp-action="Index" style="color:indianred">[CIX]</a>
+            <a>FIX WEEK: Sporty Concept Photo </a>
+        </div>
+    </div>
+</body>
+</html>

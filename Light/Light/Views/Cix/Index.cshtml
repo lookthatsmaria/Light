@@ -1,0 +1,174 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{ ViewData["Title"] = "Cix";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        div.d {
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a asp-controller="Ateez" asp-action="Beginner">Beginner's guide</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="d">
+            <img src="https://pbs.twimg.com/media/ECgwwdqUEAEoW7G.jpg" alt="cix" style="width:110%">
+            <p>[CIX] Cix for Singles Magazine</p>
+            <h1>CIX</h1>
+            CIX (씨아이엑스; short for Complete In X) is a five-member boy group under C9 Entertainment. They debuted on July 23, 2019 with the EP 'Hello' Chapter 1. Hello, Stranger.
+            <iframe width="966" height="543" src="https://www.youtube.com/embed/5FV74Nbu0i0?list=RD5FV74Nbu0i0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2> Group’s Name Meaning </h2>
+            <p>
+                Why ?: It is an acronym for Complete in X, "complete in X", which means to be complete in the unknown.
+            </p>
+            <p>
+                Curiosity: C9Boyz was their temporary before changing it.
+            </p>
+
+          
+            <p>&nbsp;</p>
+            <h2>Members</h2>
+            <table>
+                <tr>
+                    <th>Stage Name</th>
+                    <th>Birth Name</th>
+                    <th>Birth Date</th>
+                    <th>Position</th>
+                </tr>
+                <tr>
+                    <td>BX</td>
+                    <td>Lee Byoung-gon (이병곤)</td>
+                    <td>March 5, 1998</td>
+                    <td>
+                        Leader, Main Rapper, Vocalist
+                    </td>
+                </tr>
+                <tr>
+                    <td>Seung Hun</td>
+                    <td>Kim Seung-hun (김승훈)</td>
+                    <td>February 26, 1999</td>
+                    <td>Main Vocalist, Lead Dancer</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Yong Hee</td>
+                    <td>Kim Yong-hee (김용희)</td>
+                    <td>February 17, 2000</td>
+                    <td>Vocalist, Visual</td>
+                </tr>
+                <tr>
+                    <td>Bae Jin Young</td>
+                    <td>Bae Jin-young (배진영)</td>
+                    <td>May 10, 2000</td>
+                    <td>Lead Vocalist, Lead Dancer, Center, Face of the Group</td>
+                </tr>
+                <tr>
+                    <td>Hyun Suk</td>
+                    <td>Yoon Hyun-suk (윤현석)</td>
+                    <td>September 8, 2001</td>
+                    <td>Main Dancer, Lead Rapper, Vocalist, Maknae</td>
+                </tr>
+            
+            </table>
+            <p>&nbsp;</p>
+            <h2>Fandom's Name</h2>
+            <p>FIX</p>
+            <h3>Meaning of the Fandom's Name</h3>
+            <p>
+                Why ?: in Korean “픽스” stands for “FAITH IN X”
+            </p>
+        </div>
+    </div>
+
+    <script>function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }</script>
+
+</body>
+</html>
